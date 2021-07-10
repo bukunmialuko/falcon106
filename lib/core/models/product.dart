@@ -9,7 +9,11 @@ class Product {
   final int price;
   final String imageUrl;
 
-  Product(this.id, this.name, this.price, this.imageUrl);
+  Product(
+      {required this.id,
+      required this.name,
+      required this.price,
+      required this.imageUrl});
 
   factory Product.fromJson(Map<String, dynamic> json) =>
       _$ProductFromJson(json);
