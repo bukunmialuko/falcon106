@@ -17,6 +17,7 @@ class ProductList extends StatelessWidget {
           children: <Widget>[
             Padding(
               child: InkWell(
+                  key: Key('text_$index'),
                   child: ProductCard(products[index]),
                   onTap: () {
                     cartModel.addToCart(products[index]);

@@ -7,7 +7,7 @@ class CartModel extends BaseModel {
   Map<String, List<Product>> cartSummary = {};
 
   int get cartSize {
-    return cart != null ? cart.length : 0;
+    return cart.length;
   }
 
   void addToCart(Product product) {
